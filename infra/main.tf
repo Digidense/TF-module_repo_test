@@ -6,7 +6,6 @@ resource "aws_internet_gateway" "igw" {
 }
 
 resource "aws_subnet" "subnet1" {
-  count = 0
   vpc_id                  = var.vpc_id
   cidr_block              = "10.0.1.0/24"
   availability_zone       = "us-east-1a"
@@ -17,7 +16,6 @@ resource "aws_subnet" "subnet1" {
   }
 }
 resource "aws_subnet" "subnet2" {
-  count = 0
   vpc_id                  = var.vpc_id
   cidr_block              = "10.0.2.0/24"
   availability_zone       = "us-east-1b"
