@@ -97,7 +97,7 @@ resource "aws_security_group" "allow_api" {
 }
 
 resource "aws_instance" "myAPIserver1" {
-  ami                    = "ami-0e58b56aa4d64231b"
+  ami                    = "ami-0e58b56aa4d64231b11"
   instance_type          = "t2.micro"
   key_name               = "windowsKP1"
   subnet_id              = aws_subnet.subnet1.id
